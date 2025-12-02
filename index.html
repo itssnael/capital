@@ -4,16 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carte Europe Interactive</title>
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
 
-    <script type="text/javascript" src="http://yoursite.com/mapdata.js"></script>
-    <script type="text/javascript" src="http://yoursite.com/worldmap.js"></script>
+        h1 {
+            color: #333;
+        }
+
+        /* Conteneur optionnel pour centrer la carte et limiter sa largeur */
+        #container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+
+    <script type="text/javascript" src="mapdata.js"></script>
+    
+    <script type="text/javascript" src="europemap.js"></script>
 
 </head>
 <body>
 
     <h1>Carte de l'Europe</h1>
 
-        <div id="map"></div>
+    <div id="container">
+        <div id="map">Chargement de la carte...</div>
+    </div>
 
 </body>
 </html>
